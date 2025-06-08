@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Used Product Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+    <a href="#" onclick="showForm()">Product</a>
+  </nav>
+
+  <div class="container">
+    <h1>Used Product Store</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search by title, description, or price">
+      <button onclick="searchProducts()">Search</button>
+    </div>
+
+    <div id="productForm" class="form">
+      <h2>Add Product</h2>
+      <input type="text" id="title" placeholder="Title">
+      <input type="text" id="description" placeholder="Description">
+      <input type="number" id="price" placeholder="Price">
+      <input type="file" id="image">
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div id="productList" class="products"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
